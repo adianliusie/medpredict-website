@@ -1,9 +1,11 @@
 {
+  "homepage": "https:/adianliusie.github.io/medpredict-website",
   "name": "soft-ui-pro",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.4.3",
+    "prop-types": "15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^5.2.0",
@@ -12,6 +14,8 @@
   },
   "scripts": {
     "start": "craco start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "craco build",
     "test": "craco test --env=jsdom",
     "eject": "craco eject"
@@ -29,6 +33,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "react-scripts": "^5.0.1"
   }
 }
